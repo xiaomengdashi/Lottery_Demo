@@ -70,44 +70,44 @@ CMakeFiles/Lottery.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lottery.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp -o CMakeFiles/Lottery.dir/main.cpp.s
 
-CMakeFiles/Lottery.dir/People.cpp.o: CMakeFiles/Lottery.dir/flags.make
-CMakeFiles/Lottery.dir/People.cpp.o: ../People.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lottery.dir/People.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lottery.dir/People.cpp.o -c /Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.cpp
+CMakeFiles/Lottery.dir/Staff.cpp.o: CMakeFiles/Lottery.dir/flags.make
+CMakeFiles/Lottery.dir/Staff.cpp.o: ../Staff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lottery.dir/Staff.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lottery.dir/Staff.cpp.o -c /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp
 
-CMakeFiles/Lottery.dir/People.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lottery.dir/People.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.cpp > CMakeFiles/Lottery.dir/People.cpp.i
+CMakeFiles/Lottery.dir/Staff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lottery.dir/Staff.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp > CMakeFiles/Lottery.dir/Staff.cpp.i
 
-CMakeFiles/Lottery.dir/People.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lottery.dir/People.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.cpp -o CMakeFiles/Lottery.dir/People.cpp.s
+CMakeFiles/Lottery.dir/Staff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lottery.dir/Staff.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp -o CMakeFiles/Lottery.dir/Staff.cpp.s
 
-CMakeFiles/Lottery.dir/lottery.cpp.o: CMakeFiles/Lottery.dir/flags.make
-CMakeFiles/Lottery.dir/lottery.cpp.o: ../lottery.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lottery.dir/lottery.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lottery.dir/lottery.cpp.o -c /Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.cpp
+CMakeFiles/Lottery.dir/Lottery.cpp.o: CMakeFiles/Lottery.dir/flags.make
+CMakeFiles/Lottery.dir/Lottery.cpp.o: ../Lottery.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lottery.dir/Lottery.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lottery.dir/Lottery.cpp.o -c /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp
 
-CMakeFiles/Lottery.dir/lottery.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lottery.dir/lottery.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.cpp > CMakeFiles/Lottery.dir/lottery.cpp.i
+CMakeFiles/Lottery.dir/Lottery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lottery.dir/Lottery.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp > CMakeFiles/Lottery.dir/Lottery.cpp.i
 
-CMakeFiles/Lottery.dir/lottery.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lottery.dir/lottery.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.cpp -o CMakeFiles/Lottery.dir/lottery.cpp.s
+CMakeFiles/Lottery.dir/Lottery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lottery.dir/Lottery.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp -o CMakeFiles/Lottery.dir/Lottery.cpp.s
 
 # Object files for target Lottery
 Lottery_OBJECTS = \
 "CMakeFiles/Lottery.dir/main.cpp.o" \
-"CMakeFiles/Lottery.dir/People.cpp.o" \
-"CMakeFiles/Lottery.dir/lottery.cpp.o"
+"CMakeFiles/Lottery.dir/Staff.cpp.o" \
+"CMakeFiles/Lottery.dir/Lottery.cpp.o"
 
 # External object files for target Lottery
 Lottery_EXTERNAL_OBJECTS =
 
 Lottery: CMakeFiles/Lottery.dir/main.cpp.o
-Lottery: CMakeFiles/Lottery.dir/People.cpp.o
-Lottery: CMakeFiles/Lottery.dir/lottery.cpp.o
+Lottery: CMakeFiles/Lottery.dir/Staff.cpp.o
+Lottery: CMakeFiles/Lottery.dir/Lottery.cpp.o
 Lottery: CMakeFiles/Lottery.dir/build.make
 Lottery: CMakeFiles/Lottery.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Lottery"

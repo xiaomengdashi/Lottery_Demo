@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Lottery.dir/People.cpp.o"
-  "CMakeFiles/Lottery.dir/lottery.cpp.o"
+  "CMakeFiles/Lottery.dir/Lottery.cpp.o"
+  "CMakeFiles/Lottery.dir/Staff.cpp.o"
   "CMakeFiles/Lottery.dir/main.cpp.o"
   "Lottery"
   "Lottery.pdb"

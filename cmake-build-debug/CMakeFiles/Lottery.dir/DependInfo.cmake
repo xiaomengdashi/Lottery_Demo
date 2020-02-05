@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/People.cpp.o"
-  "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/lottery.cpp.o"
+  "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/Lottery.cpp.o"
+  "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/Staff.cpp.o"
   "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

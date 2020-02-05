@@ -80,16 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.cpp">
+		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp">
 			<Option target="Lottery"/>
 		</Unit>
-		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/People.h">
+		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h">
 			<Option target="Lottery"/>
 		</Unit>
-		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.cpp">
+		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp">
 			<Option target="Lottery"/>
 		</Unit>
-		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/lottery.h">
+		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h">
 			<Option target="Lottery"/>
 		</Unit>
 		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp">

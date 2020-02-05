@@ -3,4 +3,4 @@ project(Lottery)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Lottery main.cpp People.cpp People.h lottery.cpp lottery.h)
+add_executable(Lottery main.cpp Staff.cpp Staff.h Lottery.cpp Lottery.h)

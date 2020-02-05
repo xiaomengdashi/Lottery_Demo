@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
+Staff.h
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
+
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp
+iostream
+-
+string
+-
+Staff.h
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
+
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
+string
+-
+vector
+-
+
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp
+iostream
+-
+Lottery.h
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
+Staff.h
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
+
