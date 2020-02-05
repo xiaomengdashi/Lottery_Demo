@@ -95,6 +95,9 @@
 		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp">
 			<Option target="Lottery"/>
 		</Unit>
+		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/test.cpp">
+			<Option target="Lottery"/>
+		</Unit>
 		<Unit filename="/Users/kolane/Desktop/CLionProjects/Lottery_Demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

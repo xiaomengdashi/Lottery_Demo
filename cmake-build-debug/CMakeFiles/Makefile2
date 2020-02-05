@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/Lottery.dir/all:
 	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/depend
 	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Lottery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Lottery"
 .PHONY : CMakeFiles/Lottery.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lottery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lottery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Lottery.dir/rule

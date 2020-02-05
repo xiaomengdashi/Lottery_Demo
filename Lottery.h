@@ -13,15 +13,16 @@ class Lottery
 public:
     Lottery();
     ~Lottery();
+    void PrintStaff();  // 打印全体员工信息
+    void LotteryStart(bool flag = false, const string& department = "", const string& team= "");
+    friend int GetRandomNum(int num_max);
 
+private:
     void NotRepeatLottery();
     void AllStaffLottery();
     void DepartmentLottery(const string& department);
     void TeamLottery(const string& team);
 
-    void LotteryStart(bool flag = false, const string& department = "", const string& team= "");
-
-private:
     Staff lottery_staff_;
     int lottery_staff_num_ = 0;
 };

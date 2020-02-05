@@ -9,6 +9,15 @@
 
 using namespace std;
 
+int GetRandomNum(int num_max)
+{
+    std::random_device rd;
+    std::default_random_engine gen = std::default_random_engine(rd());
+    std::uniform_int_distribution<int> dis(1, num_max);
+
+    return dis(gen);
+}
+
 Lottery::Lottery()
 {
     int ch;
@@ -23,8 +32,8 @@ Lottery::Lottery()
         else
             break;
         ch = std::cin.get();
-        // cout << "当前员工数量" << lottery_staff_num_ << endl;
     }
+    lottery_staff_num_--;
 }
 
 Lottery::~Lottery()
@@ -32,82 +41,96 @@ Lottery::~Lottery()
 
 }
 
+void Lottery::PrintStaff()
+{
+//    lottery_staff_.PrintAllStaff();
+    for (auto & it : lottery_staff_.staff_)
+    {
+        cout << it.id << " "<< it.job_number << " "<< it.name << " "
+             << it.department << " "<< it.team << " "<< it.is_win << endl;
+    }
+}
+
 void Lottery::AllStaffLottery()
 {
-    int range;
-    while(cout << "输入随机数的范围 : ", cin >> range)
+    int random_id = GetRandomNum(lottery_staff_num_);
+//    set<int> random_num_set;
+//    random_num_set.insert(random_id);
+    for (auto & it : lottery_staff_.staff_)
     {
-        int ch;
-        ch = cin.get();
-        while (ch)
+        if(it.id == random_id)
         {
-            if (ch == '\n')
-            {
-                std::random_device rd;
-                std::default_random_engine gen = std::default_random_engine(rd());
-                std::uniform_int_distribution<int> dis(1, lottery_staff_num_);
-
-                std::cout << "random number between 1 and range is: ";
-                std::cout << dis(gen) << " " << std::endl;
-            }
-            else
-                break;
-            ch = cin.get();
+            cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
+            it.is_win = true;
+            break;
         }
     }
 }
 
 void Lottery::NotRepeatLottery()
 {
-    lottery_staff_num_ = lottery_staff_.GetLotteryStaff(); // 全体抽奖员工数量
-    int range;
-    set<int> random_nums;
-    while(cout << "输入随机数的范围 : ", cin >> range)
+    int random_id = GetRandomNum(lottery_staff_num_);
+    for (auto & it : lottery_staff_.staff_)
     {
-        int ch = cin.get();
-        while (ch)
+        if(it.id == random_id)
         {
-            if (ch == '\n')
+            if (!it.is_win)
             {
-                std::random_device rd;
-                std::default_random_engine gen = std::default_random_engine(rd());
-                std::uniform_int_distribution<int> dis(1, range);
-
-                std::cout << "random number between 1 and range is: ";
-                int random_num = dis(gen);
-
-                if (random_nums.find(random_num) == random_nums.end())
-                {
-                    std::cout << random_num << " " << std::endl;
-                    random_nums.insert(random_num);
-
-                    if (random_nums.size() == range)
-                    {
-                        std::cout << "全体员工都中奖了" << std::endl;
-                        break;
-                    }
-                }
+                cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
+                it.is_win = true;
+                break;
             }
             else
-                break;
-            ch = cin.get();
+            {
+                // random_id = dis(gen);
+            }
         }
     }
 }
 
 void Lottery::DepartmentLottery(const string& department)
 {
-
+    int random_id = GetRandomNum(lottery_staff_num_);
+    for (auto & it : lottery_staff_.staff_)
+    {
+        if (it.id == random_id)
+        {
+            if (it.department == department && !it.is_win)
+            {
+                cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
+                it.is_win = true;
+                break;
+            }
+            else
+            {
+                // random_id = dis(gen);
+            }
+        }
+    }
 }
 
 void Lottery::TeamLottery(const string& team)
 {
-
+    int random_id = GetRandomNum(lottery_staff_num_);
+    for (auto &it : lottery_staff_.staff_)
+    {
+        if (it.id == random_id) {
+            if (it.team == team && !it.is_win)
+            {
+                cout << "中奖员工为：" << it.name << endl;
+                it.is_win = true;
+                break;
+            } else
+            {
+//                random_id = dis(gen);  // 如果id
+            }
+        }
+    }
 }
 
 void Lottery::LotteryStart(bool flag, const string& department, const string& team)
 {
-    if (!flag)
+    if (!flag && department.empty() && team.empty())
     {
         this->AllStaffLottery();
     }
