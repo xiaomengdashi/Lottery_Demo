@@ -12,14 +12,12 @@ using namespace std;
 
 struct sta
 {
-    int job_number;
+    int job_number = 0;
     string name = "";
     string department = "";
     string team = "";
     bool is_win = false;  // 是否曾经中奖
 };
-
-
 
 class Staff
 {
@@ -27,9 +25,9 @@ public:
     Staff();
     ~Staff();
     void Add();
-    void PrintAllStaff();
+    int GetLotteryStaff(string department = "", string team = "");
 
 private:
-    vector<sta> v;
+    vector<sta> staff_;
 };
 #endif //LOTTERY_STAFF_H

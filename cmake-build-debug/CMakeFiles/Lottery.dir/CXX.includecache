@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
-Staff.h
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
-
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp
 iostream
 -
+random
+-
+set
+-
+Lottery.h
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
+
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
 string
 -
 Staff.h
@@ -23,12 +27,4 @@ string
 -
 vector
 -
-
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp
-iostream
--
-Lottery.h
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
-Staff.h
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
 
