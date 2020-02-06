@@ -231,6 +231,33 @@ test.cpp.s:
 	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/test.cpp.s
 .PHONY : test.cpp.s
 
+unittest.o: unittest.cpp.o
+
+.PHONY : unittest.o
+
+# target to build an object file
+unittest.cpp.o:
+	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.o
+.PHONY : unittest.cpp.o
+
+unittest.i: unittest.cpp.i
+
+.PHONY : unittest.i
+
+# target to preprocess a source file
+unittest.cpp.i:
+	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.i
+.PHONY : unittest.cpp.i
+
+unittest.s: unittest.cpp.s
+
+.PHONY : unittest.s
+
+# target to generate assembly for a file
+unittest.cpp.s:
+	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.s
+.PHONY : unittest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
+	@echo "... unittest.o"
+	@echo "... unittest.i"
+	@echo "... unittest.s"
 .PHONY : help
 
 

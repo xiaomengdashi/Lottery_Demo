@@ -12,3 +12,5 @@ CMakeFiles/Lottery.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Lottery.dir/test.cpp.o: ../test.cpp
 
+CMakeFiles/Lottery.dir/unittest.cpp.o: ../unittest.cpp
+

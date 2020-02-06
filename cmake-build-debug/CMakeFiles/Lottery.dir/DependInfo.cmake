@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/Staff.cpp.o"
   "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/main.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o"
   "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/test.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/test.cpp.o"
+  "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/unittest.cpp" "/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery.dir/unittest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

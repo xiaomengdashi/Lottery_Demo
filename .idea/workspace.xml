@@ -11,7 +11,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="" />
+    <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/unittest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Lottery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Lottery.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lottery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lottery.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lottery.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,10 +118,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="117" key="#Notifications" timestamp="1580920982280">
+    <state x="320" y="117" key="#Notifications" timestamp="1580978294224">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="117" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1580920982280" />
+    <state x="320" y="117" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1580978294224" />
     <state x="497" y="261" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580886052053">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -108,46 +130,52 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="206" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1580881293173" />
-    <state x="100" y="0" width="1240" height="900" key="DiffContextDialog" timestamp="1580922165459">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="363" y="51" key="CommitChangelistDialog2" timestamp="1580977566900">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="363" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580977566900" />
+    <state x="100" y="0" width="1240" height="900" key="DiffContextDialog" timestamp="1580980125644">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1580979700903" />
+    <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.807@0.23.1440.807" timestamp="1580980125644" />
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1580922165459" />
-    <state width="1394" height="600" key="GridCell.Tab.0.bottom" timestamp="1580977198740">
+    <state width="1394" height="501" key="GridCell.Tab.0.bottom" timestamp="1580980783314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580977198740" />
+    <state width="1394" height="501" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580980783314" />
     <state width="1394" height="368" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="1394" height="600" key="GridCell.Tab.0.center" timestamp="1580977198739">
+    <state width="1394" height="501" key="GridCell.Tab.0.center" timestamp="1580980783314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580977198739" />
+    <state width="1394" height="501" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580980783314" />
     <state width="1394" height="368" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1580922348214" />
-    <state width="1394" height="600" key="GridCell.Tab.0.left" timestamp="1580977198738">
+    <state width="1394" height="501" key="GridCell.Tab.0.left" timestamp="1580980783312">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580977198738" />
+    <state width="1394" height="501" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580980783312" />
     <state width="1394" height="368" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1580922348213" />
-    <state width="1394" height="600" key="GridCell.Tab.0.right" timestamp="1580977198739">
+    <state width="1394" height="501" key="GridCell.Tab.0.right" timestamp="1580980783314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580977198739" />
+    <state width="1394" height="501" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580980783314" />
     <state width="1394" height="368" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="1394" height="344" key="GridCell.Tab.1.bottom" timestamp="1580975783536">
+    <state width="1394" height="201" key="GridCell.Tab.1.bottom" timestamp="1580977652375">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="344" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580975783536" />
-    <state width="1394" height="344" key="GridCell.Tab.1.center" timestamp="1580975783535">
+    <state width="1394" height="201" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580977652375" />
+    <state width="1394" height="201" key="GridCell.Tab.1.center" timestamp="1580977652375">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="344" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1580975783535" />
-    <state width="1394" height="344" key="GridCell.Tab.1.left" timestamp="1580975783535">
+    <state width="1394" height="201" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1580977652375" />
+    <state width="1394" height="201" key="GridCell.Tab.1.left" timestamp="1580977652374">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="344" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1580975783535" />
-    <state width="1394" height="344" key="GridCell.Tab.1.right" timestamp="1580975783536">
+    <state width="1394" height="201" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1580977652374" />
+    <state width="1394" height="201" key="GridCell.Tab.1.right" timestamp="1580977652375">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="344" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1580975783536" />
+    <state width="1394" height="201" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1580977652375" />
     <state x="244" y="89" key="SettingsEditor" timestamp="1580886889450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

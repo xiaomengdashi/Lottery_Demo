@@ -33,7 +33,6 @@ Lottery::~Lottery()
 
 void Lottery::PrintStaff()
 {
-//    staff_.PrintAllStaff();
     for (auto & it : staff_)
     {
         cout << it.id << " "<< it.job_number << " "<< it.name << " "
@@ -73,7 +72,6 @@ void Lottery::NotRepeatLottery()
             else
             {
                 //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
-                // random_id = dis(gen);
             }
         }
     }
@@ -94,7 +92,7 @@ void Lottery::DepartmentLottery(const string& department)
             }
             else
             {
-                // random_id = dis(gen);
+                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
             }
         }
     }
@@ -114,7 +112,7 @@ void Lottery::TeamLottery(const string& team)
             }
             else
             {
-//                random_id = dis(gen);  // 如果id
+                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
             }
         }
     }
@@ -129,7 +127,6 @@ void Lottery::DobuleStaff(const string& name)
         {
             staff_.push_back(staff_[i]);
             staff_num_++;
-            //TODO 修改增加的员工id
             staff_[staff_num_-1].id = ++id;
         }
     }

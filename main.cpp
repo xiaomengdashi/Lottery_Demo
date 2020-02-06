@@ -17,8 +17,9 @@ int main()
     lottery.AddStaff(999, "小王", "二部", "son");
 
 
-    lottery.DobuleStaff("小明");
-    lottery.DobuleTeam("mcp");
+//    lottery.DobuleStaff("小明");
+//    lottery.DobuleTeam("mcp");
+//    lottery.DeleteStaff("小王");
 
     lottery.LotteryStart(false, "", "");
     lottery.LotteryStart(true, "", "");
@@ -26,7 +27,7 @@ int main()
     lottery.LotteryStart(false, "", "mcp");
 
 
-    lottery.PrintStaff();
+//    lottery.PrintStaff();
 
     return 0;
 }
