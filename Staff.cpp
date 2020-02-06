@@ -2,10 +2,7 @@
 // Created by kolane on 2020/2/3.
 //
 
-#include <iostream>
 #include "Staff.h"
-
-static int id = 0;
 
 Staff::Staff()
 {
@@ -17,23 +14,19 @@ Staff::~Staff()
 
 }
 
-void Staff::Add()
+void Staff::Add(const sta& staff)
 {
-    sta staff;
-    int job_number;
-    string name;
-    string department;
-    string team;
+    staff_.push_back(staff);
+}
 
-    std::cout << "请输入员工的工号，姓名，部门，团队: ";
-    std::cin >> job_number >> name >> department >> team;
-    if (job_number != 0)
+void Staff::Delete(const string& name)
+{
+    for(auto it = staff_.begin(); it != staff_.end(); it++)
     {
-        staff.id = ++id;
-        staff.job_number = job_number;
-        staff.name = name;
-        staff.department = department;
-        staff.team = team;
-        staff_.push_back(staff);
+        if(it->name == name)
+        {
+            it = staff_.erase(it);
+            if(it == staff_.end()) break;
+        }
     }
 }

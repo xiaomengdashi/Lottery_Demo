@@ -5,20 +5,26 @@ using namespace std;
 
 int main()
 {
-    int num;
-    cout << "请输入抽奖个数：", cin >>num;
     Lottery lottery;
+    lottery.AddStaff(111, "小明", "一部", "mcp");
+    lottery.AddStaff(222, "小红", "二部", "son1");
+    lottery.AddStaff(333, "小李", "三部", "mcp");
+    lottery.AddStaff(444, "小刚", "一部", "son2");
+    lottery.AddStaff(555, "小玉", "二部", "ci");
+    lottery.AddStaff(666, "小马", "三部", "mcp");
+    lottery.AddStaff(777, "小刘", "二部", "ci");
+    lottery.AddStaff(888, "小白", "一部", "tool");
+    lottery.AddStaff(999, "小王", "二部", "son");
 
-    while (num--)
-    {
-        // 第一次输入前需要回车，当显示 "请输入员工的工号，姓名，部门，团队: "，后输入员工信息；
-        // 输入完后，再次回车，如果还有员工，继续输入；
-        // 当输入员工信息为 "q"时，结束输入。
-//        lottery.LotteryStart(false, "", ""); //全体员工抽奖
-        lottery.LotteryStart(true, "", ""); // 抽取之前未中奖员工
-//        lottery.LotteryStart(false, "一部", ""); // 抽取一部员工
-//        lottery.LotteryStart(false, "", "mcp"); // 抽取mcp团队
-    }
+
+    lottery.DobuleStaff("小明");
+    lottery.DobuleTeam("mcp");
+
+    lottery.LotteryStart(false, "", "");
+    lottery.LotteryStart(true, "", "");
+    lottery.LotteryStart(false, "一部", "");
+    lottery.LotteryStart(false, "", "mcp");
+
 
     lottery.PrintStaff();
 

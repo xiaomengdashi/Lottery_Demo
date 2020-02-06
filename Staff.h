@@ -13,7 +13,7 @@ using namespace std;
 struct sta
 {
     int id = 0;   // 编号
-    int job_number = 0;   //
+    int job_number = 0;
     string name = "";
     string department = "";
     string team = "";
@@ -25,7 +25,8 @@ class Staff
 public:
     Staff();
     ~Staff();
-    void Add();
+    void Add(const sta& s);
+    void Delete(const string& name);
 
 public:
     vector<sta> staff_;

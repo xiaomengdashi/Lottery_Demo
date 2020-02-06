@@ -6,19 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.cpp
-iostream
--
-random
--
-set
--
-Lottery.h
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
-
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Lottery.h
-string
--
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.cpp
 Staff.h
 /Users/kolane/Desktop/CLionProjects/Lottery_Demo/Staff.h
 

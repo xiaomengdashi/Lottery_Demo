@@ -5,9 +5,12 @@
 #include <iostream>
 #include <random>
 #include <set>
+#include <utility>
 #include "Lottery.h"
 
 using namespace std;
+
+static int id = 0;
 
 int GetRandomNum(int num_max)
 {
@@ -20,20 +23,7 @@ int GetRandomNum(int num_max)
 
 Lottery::Lottery()
 {
-    int ch;
-    ch = std::cin.get();
-    while (ch) // 回车继续增加，输入其他则停止增加
-    {
-        if (ch == '\n')
-        {
-            lottery_staff_.Add(); // 例如：1 王 一部 mcp
-            lottery_staff_num_ ++;
-        }
-        else
-            break;
-        ch = std::cin.get();
-    }
-    lottery_staff_num_--;
+
 }
 
 Lottery::~Lottery()
@@ -82,6 +72,7 @@ void Lottery::NotRepeatLottery()
             }
             else
             {
+                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
                 // random_id = dis(gen);
             }
         }
@@ -117,13 +108,44 @@ void Lottery::TeamLottery(const string& team)
         if (it.id == random_id) {
             if (it.team == team && !it.is_win)
             {
-                cout << "中奖员工为：" << it.name << endl;
+                cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
                 break;
-            } else
+            }
+            else
             {
 //                random_id = dis(gen);  // 如果id
             }
+        }
+    }
+}
+
+void Lottery::DobuleStaff(const string& name)
+{
+    int num  = lottery_staff_num_;
+    for (int i = 0; i<num; i++)
+    {
+        if (lottery_staff_.staff_[i].name == name)
+        {
+            lottery_staff_.staff_.push_back(lottery_staff_.staff_[i]);
+            lottery_staff_num_++;
+            //TODO 修改增加的员工id
+            lottery_staff_.staff_[lottery_staff_num_-1].id = ++id;
+        }
+    }
+}
+
+
+void Lottery::DobuleTeam(const string& team)
+{
+    int num  = lottery_staff_num_;
+    for (int i = 0; i<num; i++)
+    {
+        if (lottery_staff_.staff_[i].team == team)
+        {
+            lottery_staff_.staff_.push_back(lottery_staff_.staff_[i]);
+            lottery_staff_num_++;
+            lottery_staff_.staff_[lottery_staff_num_-1].id = ++id;
         }
     }
 }
@@ -144,5 +166,23 @@ void Lottery::LotteryStart(bool flag, const string& department, const string& te
     }
     else
         this->NotRepeatLottery();
+}
+
+void Lottery::AddStaff(int job_number, string name, string department, string team)
+{
+    sta staff;
+    staff.id = ++id;
+    staff.job_number = job_number;
+    staff.name = std::move(name);
+    staff.department = std::move(department);
+    staff.team = std::move(team);
+
+    lottery_staff_.Add(staff);
+    lottery_staff_num_++;
+}
+
+void Lottery::DeleteStaff(string name)
+{
+
 }
 
