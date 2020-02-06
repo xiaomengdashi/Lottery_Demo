@@ -11,22 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Staff.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff.h" beforeDir="false" afterPath="$PROJECT_DIR$/Staff.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Lottery.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Lottery.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Staff.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/Staff.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lottery.dir/test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lottery" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lottery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +70,7 @@
       <workItem from="1580717043721" duration="11267000" />
       <workItem from="1580867213621" duration="14406000" />
       <workItem from="1580893886267" duration="725000" />
-      <workItem from="1580899179777" duration="24956000" />
+      <workItem from="1580899179777" duration="27971000" />
     </task>
     <servers />
   </component>
@@ -127,42 +112,42 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1580922165459" />
-    <state width="1394" height="408" key="GridCell.Tab.0.bottom" timestamp="1580973234640">
+    <state width="1394" height="600" key="GridCell.Tab.0.bottom" timestamp="1580976312976">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580973234640" />
+    <state width="1394" height="600" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580976312976" />
     <state width="1394" height="368" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="1394" height="408" key="GridCell.Tab.0.center" timestamp="1580973234639">
+    <state width="1394" height="600" key="GridCell.Tab.0.center" timestamp="1580976312975">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580973234639" />
+    <state width="1394" height="600" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580976312975" />
     <state width="1394" height="368" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1580922348214" />
-    <state width="1394" height="408" key="GridCell.Tab.0.left" timestamp="1580973234639">
+    <state width="1394" height="600" key="GridCell.Tab.0.left" timestamp="1580976312974">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580973234639" />
+    <state width="1394" height="600" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580976312974" />
     <state width="1394" height="368" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1580922348213" />
-    <state width="1394" height="408" key="GridCell.Tab.0.right" timestamp="1580973234639">
+    <state width="1394" height="600" key="GridCell.Tab.0.right" timestamp="1580976312975">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580973234639" />
+    <state width="1394" height="600" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580976312975" />
     <state width="1394" height="368" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="1394" height="408" key="GridCell.Tab.1.bottom" timestamp="1580973234641">
+    <state width="1394" height="344" key="GridCell.Tab.1.bottom" timestamp="1580975783536">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580973234641" />
-    <state width="1394" height="408" key="GridCell.Tab.1.center" timestamp="1580973234640">
+    <state width="1394" height="344" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580975783536" />
+    <state width="1394" height="344" key="GridCell.Tab.1.center" timestamp="1580975783535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1580973234640" />
-    <state width="1394" height="408" key="GridCell.Tab.1.left" timestamp="1580973234640">
+    <state width="1394" height="344" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1580975783535" />
+    <state width="1394" height="344" key="GridCell.Tab.1.left" timestamp="1580975783535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1580973234640" />
-    <state width="1394" height="408" key="GridCell.Tab.1.right" timestamp="1580973234641">
+    <state width="1394" height="344" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1580975783535" />
+    <state width="1394" height="344" key="GridCell.Tab.1.right" timestamp="1580975783536">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="408" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1580973234641" />
+    <state width="1394" height="344" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1580975783536" />
     <state x="244" y="89" key="SettingsEditor" timestamp="1580886889450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -187,16 +172,5 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1580703736953" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>14</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

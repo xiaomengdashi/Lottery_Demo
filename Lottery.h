@@ -6,7 +6,19 @@
 #define LOTTERY_LOTTERY_H
 
 #include <string>
-#include "Staff.h"
+#include <vector>
+
+using namespace std;
+
+struct sta
+{
+    int id = 0;   // 编号
+    int job_number = 0;
+    string name = "";
+    string department = "";
+    string team = "";
+    bool is_win = false;  // 是否曾经中奖
+};
 
 class Lottery
 {
@@ -29,7 +41,7 @@ public:
     friend int GetRandomNum(int num_max);
 
 private:
-    Staff lottery_staff_;
-    int lottery_staff_num_ = 0;
+    vector<sta> staff_;
+    int staff_num_ = 0;
 };
 #endif //LOTTERY_LOTTERY_H

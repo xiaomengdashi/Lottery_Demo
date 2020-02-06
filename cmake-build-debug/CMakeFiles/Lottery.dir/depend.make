@@ -3,13 +3,11 @@
 
 CMakeFiles/Lottery.dir/Lottery.cpp.o: ../Lottery.cpp
 CMakeFiles/Lottery.dir/Lottery.cpp.o: ../Lottery.h
-CMakeFiles/Lottery.dir/Lottery.cpp.o: ../Staff.h
 
 CMakeFiles/Lottery.dir/Staff.cpp.o: ../Staff.cpp
 CMakeFiles/Lottery.dir/Staff.cpp.o: ../Staff.h
 
 CMakeFiles/Lottery.dir/main.cpp.o: ../Lottery.h
-CMakeFiles/Lottery.dir/main.cpp.o: ../Staff.h
 CMakeFiles/Lottery.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Lottery.dir/test.cpp.o: ../test.cpp

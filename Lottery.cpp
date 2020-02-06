@@ -33,8 +33,8 @@ Lottery::~Lottery()
 
 void Lottery::PrintStaff()
 {
-//    lottery_staff_.PrintAllStaff();
-    for (auto & it : lottery_staff_.staff_)
+//    staff_.PrintAllStaff();
+    for (auto & it : staff_)
     {
         cout << it.id << " "<< it.job_number << " "<< it.name << " "
              << it.department << " "<< it.team << " "<< it.is_win << endl;
@@ -43,10 +43,10 @@ void Lottery::PrintStaff()
 
 void Lottery::AllStaffLottery()
 {
-    int random_id = GetRandomNum(lottery_staff_num_);
+    int random_id = GetRandomNum(staff_num_);
 //    set<int> random_num_set;
 //    random_num_set.insert(random_id);
-    for (auto & it : lottery_staff_.staff_)
+    for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
@@ -59,8 +59,8 @@ void Lottery::AllStaffLottery()
 
 void Lottery::NotRepeatLottery()
 {
-    int random_id = GetRandomNum(lottery_staff_num_);
-    for (auto & it : lottery_staff_.staff_)
+    int random_id = GetRandomNum(staff_num_);
+    for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
@@ -81,8 +81,8 @@ void Lottery::NotRepeatLottery()
 
 void Lottery::DepartmentLottery(const string& department)
 {
-    int random_id = GetRandomNum(lottery_staff_num_);
-    for (auto & it : lottery_staff_.staff_)
+    int random_id = GetRandomNum(staff_num_);
+    for (auto & it : staff_)
     {
         if (it.id == random_id)
         {
@@ -102,8 +102,8 @@ void Lottery::DepartmentLottery(const string& department)
 
 void Lottery::TeamLottery(const string& team)
 {
-    int random_id = GetRandomNum(lottery_staff_num_);
-    for (auto &it : lottery_staff_.staff_)
+    int random_id = GetRandomNum(staff_num_);
+    for (auto &it : staff_)
     {
         if (it.id == random_id) {
             if (it.team == team && !it.is_win)
@@ -122,15 +122,15 @@ void Lottery::TeamLottery(const string& team)
 
 void Lottery::DobuleStaff(const string& name)
 {
-    int num  = lottery_staff_num_;
+    int num  = staff_num_;
     for (int i = 0; i<num; i++)
     {
-        if (lottery_staff_.staff_[i].name == name)
+        if (staff_[i].name == name)
         {
-            lottery_staff_.staff_.push_back(lottery_staff_.staff_[i]);
-            lottery_staff_num_++;
+            staff_.push_back(staff_[i]);
+            staff_num_++;
             //TODO 修改增加的员工id
-            lottery_staff_.staff_[lottery_staff_num_-1].id = ++id;
+            staff_[staff_num_-1].id = ++id;
         }
     }
 }
@@ -138,14 +138,14 @@ void Lottery::DobuleStaff(const string& name)
 
 void Lottery::DobuleTeam(const string& team)
 {
-    int num  = lottery_staff_num_;
+    int num  = staff_num_;
     for (int i = 0; i<num; i++)
     {
-        if (lottery_staff_.staff_[i].team == team)
+        if (staff_[i].team == team)
         {
-            lottery_staff_.staff_.push_back(lottery_staff_.staff_[i]);
-            lottery_staff_num_++;
-            lottery_staff_.staff_[lottery_staff_num_-1].id = ++id;
+            staff_.push_back(staff_[i]);
+            staff_num_++;
+            staff_[staff_num_-1].id = ++id;
         }
     }
 }
@@ -177,12 +177,20 @@ void Lottery::AddStaff(int job_number, string name, string department, string te
     staff.department = std::move(department);
     staff.team = std::move(team);
 
-    lottery_staff_.Add(staff);
-    lottery_staff_num_++;
+    staff_.push_back(staff);
+    staff_num_++;
 }
 
 void Lottery::DeleteStaff(string name)
 {
+    for(auto it = staff_.begin(); it != staff_.end(); it++)
+    {
+        if(it->name == name)
+        {
+            it = staff_.erase(it);
+            if(it == staff_.end()) break;
+        }
+    }
 
 }
 

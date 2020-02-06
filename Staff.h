@@ -2,8 +2,8 @@
 // Created by kolane on 2020/2/3.
 //
 
-#ifndef LOTTERY_STAFF_H
-#define LOTTERY_STAFF_H
+#ifndef staff_H
+#define staff_H
 
 #include <string>
 #include <vector>
@@ -31,4 +31,4 @@ public:
 public:
     vector<sta> staff_;
 };
-#endif //LOTTERY_STAFF_H
+#endif //staff_H
