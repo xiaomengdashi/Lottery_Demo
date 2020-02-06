@@ -70,7 +70,7 @@
       <workItem from="1580717043721" duration="11267000" />
       <workItem from="1580867213621" duration="14406000" />
       <workItem from="1580893886267" duration="725000" />
-      <workItem from="1580899179777" duration="27971000" />
+      <workItem from="1580899179777" duration="28730000" />
     </task>
     <servers />
   </component>
@@ -112,25 +112,25 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1580922165459" />
-    <state width="1394" height="600" key="GridCell.Tab.0.bottom" timestamp="1580976312976">
+    <state width="1394" height="600" key="GridCell.Tab.0.bottom" timestamp="1580977198740">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580976312976" />
+    <state width="1394" height="600" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580977198740" />
     <state width="1394" height="368" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="1394" height="600" key="GridCell.Tab.0.center" timestamp="1580976312975">
+    <state width="1394" height="600" key="GridCell.Tab.0.center" timestamp="1580977198739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580976312975" />
+    <state width="1394" height="600" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580977198739" />
     <state width="1394" height="368" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1580922348214" />
-    <state width="1394" height="600" key="GridCell.Tab.0.left" timestamp="1580976312974">
+    <state width="1394" height="600" key="GridCell.Tab.0.left" timestamp="1580977198738">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580976312974" />
+    <state width="1394" height="600" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580977198738" />
     <state width="1394" height="368" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1580922348213" />
-    <state width="1394" height="600" key="GridCell.Tab.0.right" timestamp="1580976312975">
+    <state width="1394" height="600" key="GridCell.Tab.0.right" timestamp="1580977198739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1394" height="600" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580976312975" />
+    <state width="1394" height="600" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580977198739" />
     <state width="1394" height="368" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
     <state width="1394" height="344" key="GridCell.Tab.1.bottom" timestamp="1580975783536">
       <screen x="0" y="0" width="1440" height="900" />
@@ -164,10 +164,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="93" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1580880967649" />
-    <state x="385" y="210" key="run.anything.popup" timestamp="1580749821091">
+    <state x="385" y="210" key="run.anything.popup" timestamp="1580977043203">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1580749821091" />
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1580977043203" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1580976936309">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1580976936309" />
     <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580703736953">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
