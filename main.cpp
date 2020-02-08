@@ -27,7 +27,7 @@ int main()
     lottery.LotteryStart(false, "", "mcp");
 
 
-//    lottery.PrintStaff();
+    lottery.PrintStaff();
 
     return 0;
 }

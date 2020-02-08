@@ -40,23 +40,22 @@ void Lottery::PrintStaff()
     }
 }
 
-void Lottery::AllStaffLottery()
+string Lottery::AllStaffLottery()
 {
     int random_id = GetRandomNum(staff_num_);
-//    set<int> random_num_set;
-//    random_num_set.insert(random_id);
     for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
             cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
             it.is_win = true;
-            break;
+            return it.name;
         }
     }
+    return "";
 }
 
-void Lottery::NotRepeatLottery()
+string Lottery::NotRepeatLottery()
 {
     int random_id = GetRandomNum(staff_num_);
     for (auto & it : staff_)
@@ -67,17 +66,18 @@ void Lottery::NotRepeatLottery()
             {
                 cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                break;
+                return it.name;
             }
             else
             {
-                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
+                return this->NotRepeatLottery();
             }
         }
     }
+    return "";
 }
 
-void Lottery::DepartmentLottery(const string& department)
+string Lottery::DepartmentLottery(const string& department)
 {
     int random_id = GetRandomNum(staff_num_);
     for (auto & it : staff_)
@@ -88,17 +88,18 @@ void Lottery::DepartmentLottery(const string& department)
             {
                 cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                break;
+                return it.name;
             }
             else
             {
-                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
+                return this->DepartmentLottery(department);
             }
         }
     }
+    return "";
 }
 
-void Lottery::TeamLottery(const string& team)
+string Lottery::TeamLottery(const string& team)
 {
     int random_id = GetRandomNum(staff_num_);
     for (auto &it : staff_)
@@ -108,14 +109,15 @@ void Lottery::TeamLottery(const string& team)
             {
                 cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                break;
+                return it.name;
             }
             else
             {
-                //TODO 当前随机数所在的员工不符合要求，需要再次得到随机数。
+                return this->TeamLottery(team);
             }
         }
     }
+    return "";
 }
 
 void Lottery::DobuleStaff(const string& name)
@@ -147,22 +149,22 @@ void Lottery::DobuleTeam(const string& team)
     }
 }
 
-void Lottery::LotteryStart(bool flag, const string& department, const string& team)
+string Lottery::LotteryStart(bool flag, const string& department, const string& team)
 {
     if (!flag && department.empty() && team.empty())
     {
-        this->AllStaffLottery();
+        return this->AllStaffLottery();
     }
     else if (!department.empty())
     {
-        this->DepartmentLottery(department);
+        return this->DepartmentLottery(department);
     }
     else if (!team.empty())
     {
-        this->TeamLottery(team);
+        return this->TeamLottery(team);
     }
     else
-        this->NotRepeatLottery();
+        return this->NotRepeatLottery();
 }
 
 void Lottery::AddStaff(int job_number, string name, string department, string team)
@@ -178,7 +180,7 @@ void Lottery::AddStaff(int job_number, string name, string department, string te
     staff_num_++;
 }
 
-void Lottery::DeleteStaff(string name)
+void Lottery::DeleteStaff(const string& name)
 {
     for(auto it = staff_.begin(); it != staff_.end(); it++)
     {
@@ -188,6 +190,5 @@ void Lottery::DeleteStaff(string name)
             if(it == staff_.end()) break;
         }
     }
-
 }
 
