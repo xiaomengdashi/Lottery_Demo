@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-#include <random>
 #include <set>
 #include <utility>
 #include "Lottery.h"
@@ -11,15 +10,6 @@
 using namespace std;
 
 static int id = 0;
-
-int GetRandomNum(int num_max)
-{
-    std::random_device rd;
-    std::default_random_engine gen = std::default_random_engine(rd());
-    std::uniform_int_distribution<int> dis(1, num_max);
-
-    return dis(gen);
-}
 
 Lottery::Lottery()
 {
@@ -29,6 +19,36 @@ Lottery::Lottery()
 Lottery::~Lottery()
 {
 
+}
+
+int Lottery::GetRandomNum()
+{
+    int sum = 0;
+    vector<int> w(staff_num_);
+    vector<int> vec_sum(0);
+
+    for (int i=0; i<staff_num_; i++)
+    {
+        w[i] = staff_[i].weight;
+    }
+
+    for (int i : w)
+    {
+        sum += staff_[i].weight;
+        vec_sum.push_back(sum);
+    }
+
+    srand((unsigned)time(NULL));//每次都重新设置随机种子
+    int target = rand()%sum;
+    int k=0;
+    for(;k<vec_sum.size();++k)
+    {
+        if(target<vec_sum[k])
+        {
+            break;
+        }
+    }
+    return k+1;
 }
 
 void Lottery::PrintStaff()
@@ -42,31 +62,33 @@ void Lottery::PrintStaff()
 
 string Lottery::AllStaffLottery()
 {
-    int random_id = GetRandomNum(staff_num_);
+    string s;
+    int random_id = GetRandomNum();
     for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
-            cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
             it.is_win = true;
-            return it.name;
+            s =  it.name;
+            break;
         }
     }
-    return "";
+    return s;
 }
 
 string Lottery::NotRepeatLottery()
 {
-    int random_id = GetRandomNum(staff_num_);
+    string s;
+    int random_id = GetRandomNum();
     for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
             if (!it.is_win)
             {
-                cout << "随机数为:"<< random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                return it.name;
+                s = it.name;
+                break;
             }
             else
             {
@@ -74,21 +96,22 @@ string Lottery::NotRepeatLottery()
             }
         }
     }
-    return "";
+    return s;
 }
 
 string Lottery::DepartmentLottery(const string& department)
 {
-    int random_id = GetRandomNum(staff_num_);
-    for (auto & it : staff_)
+    string s;
+    int random_id = GetRandomNum();
+    for (auto &it : staff_)
     {
         if (it.id == random_id)
         {
             if (it.department == department && !it.is_win)
             {
-                cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                return it.name;
+                s = it.name;
+                break;
             }
             else
             {
@@ -96,20 +119,22 @@ string Lottery::DepartmentLottery(const string& department)
             }
         }
     }
-    return "";
+    return s;
 }
 
 string Lottery::TeamLottery(const string& team)
 {
-    int random_id = GetRandomNum(staff_num_);
+    string s;
+    int random_id = GetRandomNum();
     for (auto &it : staff_)
     {
-        if (it.id == random_id) {
+        if (it.id == random_id)
+        {
             if (it.team == team && !it.is_win)
             {
-                cout << "随机数为:" << random_id <<" " << "中奖员工为：" <<  it.name<< endl;
                 it.is_win = true;
-                return it.name;
+                s = it.name;
+                break;
             }
             else
             {
@@ -117,7 +142,7 @@ string Lottery::TeamLottery(const string& team)
             }
         }
     }
-    return "";
+    return s;
 }
 
 void Lottery::DobuleStaff(const string& name)
@@ -127,9 +152,7 @@ void Lottery::DobuleStaff(const string& name)
     {
         if (staff_[i].name == name)
         {
-            staff_.push_back(staff_[i]);
-            staff_num_++;
-            staff_[staff_num_-1].id = ++id;
+            staff_[i].weight = 2;
         }
     }
 }
@@ -142,29 +165,9 @@ void Lottery::DobuleTeam(const string& team)
     {
         if (staff_[i].team == team)
         {
-            staff_.push_back(staff_[i]);
-            staff_num_++;
-            staff_[staff_num_-1].id = ++id;
+            staff_[i].weight = 2;
         }
     }
-}
-
-string Lottery::LotteryStart(bool flag, const string& department, const string& team)
-{
-    if (!flag && department.empty() && team.empty())
-    {
-        return this->AllStaffLottery();
-    }
-    else if (!department.empty())
-    {
-        return this->DepartmentLottery(department);
-    }
-    else if (!team.empty())
-    {
-        return this->TeamLottery(team);
-    }
-    else
-        return this->NotRepeatLottery();
 }
 
 void Lottery::AddStaff(int job_number, string name, string department, string team)
@@ -187,6 +190,7 @@ void Lottery::DeleteStaff(const string& name)
         if(it->name == name)
         {
             it = staff_.erase(it);
+            staff_num_ -= 1;
             if(it == staff_.end()) break;
         }
     }

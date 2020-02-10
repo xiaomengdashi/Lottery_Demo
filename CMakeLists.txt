@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.15)
-project(Lottery)
+project(Lottery_Demo)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
-include_directories(
-        /usr/local/include
-)
+include_directories(.)
 
-link_directories(
-        /usr/local/lib
-)
-
-add_executable(Lottery main.cpp Staff.cpp Staff.h Lottery.cpp Lottery.h test.cpp unittest.cpp)
+add_executable(Lottery_Demo
+        Lottery.cpp
+        Lottery.h
+        main.cpp
+        Staff.cpp
+        Staff.h
+        test.cpp
+        unittest.cpp)

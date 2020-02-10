@@ -53,12 +53,12 @@ CMAKE_BINARY_DIR = /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Lottery.dir/all
+all: CMakeFiles/Lottery_Demo.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Lottery.dir/clean
+clean: CMakeFiles/Lottery_Demo.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lottery.dir
+# Target rules for target CMakeFiles/Lottery_Demo.dir
 
 # All Build rule for target.
-CMakeFiles/Lottery.dir/all:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/depend
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Lottery"
-.PHONY : CMakeFiles/Lottery.dir/all
+CMakeFiles/Lottery_Demo.dir/all:
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/depend
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Lottery_Demo"
+.PHONY : CMakeFiles/Lottery_Demo.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Lottery.dir/rule: cmake_check_build_system
+CMakeFiles/Lottery_Demo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lottery.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lottery_Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Lottery.dir/rule
+.PHONY : CMakeFiles/Lottery_Demo.dir/rule
 
 # Convenience name for target.
-Lottery: CMakeFiles/Lottery.dir/rule
+Lottery_Demo: CMakeFiles/Lottery_Demo.dir/rule
 
-.PHONY : Lottery
+.PHONY : Lottery_Demo
 
 # clean rule for target.
-CMakeFiles/Lottery.dir/clean:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/clean
-.PHONY : CMakeFiles/Lottery.dir/clean
+CMakeFiles/Lottery_Demo.dir/clean:
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/clean
+.PHONY : CMakeFiles/Lottery_Demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

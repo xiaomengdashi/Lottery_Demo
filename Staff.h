@@ -18,17 +18,7 @@ struct sta
     string department = "";
     string team = "";
     bool is_win = false;  // 是否曾经中奖
+    int weight = 1;
 };
 
-class Staff
-{
-public:
-    Staff();
-    ~Staff();
-    void Add(const sta& s);
-    void Delete(const string& name);
-
-public:
-    vector<sta> staff_;
-};
 #endif //staff_H

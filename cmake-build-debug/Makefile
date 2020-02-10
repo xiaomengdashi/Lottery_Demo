@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lottery
+# Target rules for targets named Lottery_Demo
 
 # Build rule for target.
-Lottery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lottery
-.PHONY : Lottery
+Lottery_Demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Lottery_Demo
+.PHONY : Lottery_Demo
 
 # fast build rule for target.
-Lottery/fast:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/build
-.PHONY : Lottery/fast
+Lottery_Demo/fast:
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/build
+.PHONY : Lottery_Demo/fast
 
 Lottery.o: Lottery.cpp.o
 
@@ -129,7 +129,7 @@ Lottery.o: Lottery.cpp.o
 
 # target to build an object file
 Lottery.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Lottery.cpp.o
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.o
 .PHONY : Lottery.cpp.o
 
 Lottery.i: Lottery.cpp.i
@@ -138,7 +138,7 @@ Lottery.i: Lottery.cpp.i
 
 # target to preprocess a source file
 Lottery.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Lottery.cpp.i
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.i
 .PHONY : Lottery.cpp.i
 
 Lottery.s: Lottery.cpp.s
@@ -147,7 +147,7 @@ Lottery.s: Lottery.cpp.s
 
 # target to generate assembly for a file
 Lottery.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Lottery.cpp.s
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.s
 .PHONY : Lottery.cpp.s
 
 Staff.o: Staff.cpp.o
@@ -156,7 +156,7 @@ Staff.o: Staff.cpp.o
 
 # target to build an object file
 Staff.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Staff.cpp.o
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.o
 .PHONY : Staff.cpp.o
 
 Staff.i: Staff.cpp.i
@@ -165,7 +165,7 @@ Staff.i: Staff.cpp.i
 
 # target to preprocess a source file
 Staff.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Staff.cpp.i
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.i
 .PHONY : Staff.cpp.i
 
 Staff.s: Staff.cpp.s
@@ -174,7 +174,7 @@ Staff.s: Staff.cpp.s
 
 # target to generate assembly for a file
 Staff.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/Staff.cpp.s
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.s
 .PHONY : Staff.cpp.s
 
 main.o: main.cpp.o
@@ -183,7 +183,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -201,7 +201,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test.o: test.cpp.o
@@ -210,7 +210,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/test.cpp.o
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -219,7 +219,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/test.cpp.i
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -228,7 +228,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/test.cpp.s
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 unittest.o: unittest.cpp.o
@@ -237,7 +237,7 @@ unittest.o: unittest.cpp.o
 
 # target to build an object file
 unittest.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.o
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.o
 .PHONY : unittest.cpp.o
 
 unittest.i: unittest.cpp.i
@@ -246,7 +246,7 @@ unittest.i: unittest.cpp.i
 
 # target to preprocess a source file
 unittest.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.i
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.i
 .PHONY : unittest.cpp.i
 
 unittest.s: unittest.cpp.s
@@ -255,7 +255,7 @@ unittest.s: unittest.cpp.s
 
 # target to generate assembly for a file
 unittest.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery.dir/build.make CMakeFiles/Lottery.dir/unittest.cpp.s
+	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.s
 .PHONY : unittest.cpp.s
 
 # Help Target
@@ -266,7 +266,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Lottery"
+	@echo "... Lottery_Demo"
 	@echo "... Lottery.o"
 	@echo "... Lottery.i"
 	@echo "... Lottery.s"

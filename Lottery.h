@@ -7,18 +7,9 @@
 
 #include <string>
 #include <vector>
+#include "Staff.h"
 
 using namespace std;
-
-struct sta
-{
-    int id = 0;   // 编号
-    int job_number = 0;
-    string name = "";
-    string department = "";
-    string team = "";
-    bool is_win = false;  // 是否曾经中奖
-};
 
 class Lottery
 {
@@ -28,7 +19,7 @@ public:
     void AddStaff(int job_number, string name, string department, string team);
     void DeleteStaff(const string& name);
     void PrintStaff();    // 打印全体员工信息
-    string LotteryStart(bool flag, const string& department="", const string& team="");
+    int GetRandomNum();
 
     string AllStaffLottery();  // 全体员工抽奖
     string NotRepeatLottery();  // 还未中奖员工抽奖
@@ -37,8 +28,6 @@ public:
 
     void DobuleStaff(const string& name="");    // 优秀个人翻倍抽奖
     void DobuleTeam(const string& team="");     // 优秀团队翻倍抽奖
-
-    friend int GetRandomNum(int num_max);
 
 private:
     vector<sta> staff_;
