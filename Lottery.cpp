@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-#include <set>
 #include <utility>
 #include "Lottery.h"
 
@@ -38,7 +37,7 @@ int Lottery::GetRandomNum()
         vec_sum.push_back(sum);
     }
 
-    srand((unsigned)time(NULL));//每次都重新设置随机种子
+    srand((unsigned)time(NULL));
     int target = rand()%sum;
     int k=0;
     for(;k<vec_sum.size();++k)
@@ -62,23 +61,23 @@ void Lottery::PrintStaff()
 
 string Lottery::AllStaffLottery()
 {
-    string s;
+    string staff_name;
     int random_id = GetRandomNum();
     for (auto & it : staff_)
     {
         if(it.id == random_id)
         {
             it.is_win = true;
-            s =  it.name;
+            staff_name =  it.name;
             break;
         }
     }
-    return s;
+    return staff_name;
 }
 
 string Lottery::NotRepeatLottery()
 {
-    string s;
+    string staff_name;
     int random_id = GetRandomNum();
     for (auto & it : staff_)
     {
@@ -87,7 +86,7 @@ string Lottery::NotRepeatLottery()
             if (!it.is_win)
             {
                 it.is_win = true;
-                s = it.name;
+                staff_name = it.name;
                 break;
             }
             else
@@ -96,12 +95,20 @@ string Lottery::NotRepeatLottery()
             }
         }
     }
-    return s;
+    return staff_name;
+}
+
+void Lottery::GobackLottery()
+{
+    for (auto &it : staff_)
+    {
+        it.is_win = false;
+    }
 }
 
 string Lottery::DepartmentLottery(const string& department)
 {
-    string s;
+    string staff_name;
     int random_id = GetRandomNum();
     for (auto &it : staff_)
     {
@@ -110,7 +117,7 @@ string Lottery::DepartmentLottery(const string& department)
             if (it.department == department && !it.is_win)
             {
                 it.is_win = true;
-                s = it.name;
+                staff_name = it.name;
                 break;
             }
             else
@@ -119,12 +126,12 @@ string Lottery::DepartmentLottery(const string& department)
             }
         }
     }
-    return s;
+    return staff_name;
 }
 
 string Lottery::TeamLottery(const string& team)
 {
-    string s;
+    string staff_name;
     int random_id = GetRandomNum();
     for (auto &it : staff_)
     {
@@ -133,7 +140,7 @@ string Lottery::TeamLottery(const string& team)
             if (it.team == team && !it.is_win)
             {
                 it.is_win = true;
-                s = it.name;
+                staff_name = it.name;
                 break;
             }
             else
@@ -142,7 +149,7 @@ string Lottery::TeamLottery(const string& team)
             }
         }
     }
-    return s;
+    return staff_name;
 }
 
 void Lottery::DobuleStaff(const string& name)
@@ -191,7 +198,7 @@ void Lottery::DeleteStaff(const string& name)
         {
             it = staff_.erase(it);
             staff_num_ -= 1;
-            if(it == staff_.end()) break;
+            if (it == staff_.end()) break;
         }
     }
 }

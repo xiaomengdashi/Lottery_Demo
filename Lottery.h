@@ -16,10 +16,11 @@ class Lottery
 public:
     Lottery();
     ~Lottery();
-    void AddStaff(int job_number, string name, string department, string team);
-    void DeleteStaff(const string& name);
+    void AddStaff(int job_number, string name, string department, string team);  // 增加员工
+    void DeleteStaff(const string& name);    // 剔除指定员工
     void PrintStaff();    // 打印全体员工信息
-    int GetRandomNum();
+    int GetRandomNum();   // 根据权重获取随机数
+    void GobackLottery();   // 中奖人员回归奖池
 
     string AllStaffLottery();  // 全体员工抽奖
     string NotRepeatLottery();  // 还未中奖员工抽奖
