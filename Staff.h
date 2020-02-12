@@ -20,7 +20,6 @@ enum class Awards
 
 struct sta
 {
-    int id = 0;   // 编号
     int job_number = 0;
     string name = "";
     string department = "";

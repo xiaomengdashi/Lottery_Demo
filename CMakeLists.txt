@@ -3,10 +3,9 @@ project(Lottery_Demo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
-
 #头文件目录
 include_directories(
+        ./
         /usr/local/include/
 )
 

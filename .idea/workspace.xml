@@ -12,9 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff.h" beforeDir="false" afterPath="$PROJECT_DIR$/Staff.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unittest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +73,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.protractor.protractor_package" value="" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="CMake Application.Lottery_Demo">
-    <configuration name="AllStaffTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" TEST_CLASS="AllStaffTest" TEST_MODE="SUITE_TEST">
+    <configuration name="NotRepeatTest.DoubleStaff" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" TEST_CLASS="NotRepeatTest" TEST_METHOD="DoubleStaff" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotRepeatTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" TEST_CLASS="NotRepeatTest" TEST_MODE="SUITE_TEST">
+    <configuration name="NotRepeatTest.DoubleTeam" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" TEST_CLASS="NotRepeatTest" TEST_METHOD="DoubleTeam" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -92,13 +103,13 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.Lottery_Demo" />
-      <item itemvalue="Google Test.AllStaffTest" />
-      <item itemvalue="Google Test.NotRepeatTest" />
+      <item itemvalue="Google Test.NotRepeatTest.DoubleTeam" />
+      <item itemvalue="Google Test.NotRepeatTest.DoubleStaff" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.NotRepeatTest" />
-        <item itemvalue="Google Test.AllStaffTest" />
+        <item itemvalue="Google Test.NotRepeatTest.DoubleStaff" />
+        <item itemvalue="Google Test.NotRepeatTest.DoubleTeam" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +140,8 @@
       <workItem from="1581476941702" duration="463000" />
       <workItem from="1581488891646" duration="463000" />
       <workItem from="1581489697517" duration="8419000" />
-      <workItem from="1581507996816" duration="6369000" />
+      <workItem from="1581507996816" duration="11358000" />
+      <workItem from="1581520024697" duration="4459000" />
     </task>
     <servers />
   </component>
@@ -155,14 +167,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="911" y="396" width="737" height="661" key="#AllStaffTest.DepartmentTest" timestamp="1581523891379">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="911" y="396" width="737" height="661" key="#AllStaffTest.DepartmentTest/0.0.2560.1440@0.0.2560.1440" timestamp="1581523891379" />
+    <state x="911" y="396" width="737" height="661" key="#NotRepeatTest.StaffTest" timestamp="1581517658588">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="911" y="396" width="737" height="661" key="#NotRepeatTest.StaffTest/0.0.2560.1440@0.0.2560.1440" timestamp="1581517658588" />
     <state x="320" y="117" key="#Notifications" timestamp="1580978294224">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="117" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1580978294224" />
-    <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581514245710">
+    <state x="744" y="379" width="1133" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581523906554">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581514245710" />
+    <state x="744" y="379" width="1133" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581523906554" />
     <state x="497" y="261" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580886052053">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -187,58 +207,62 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="498" height="582" key="DebuggerActiveHint/0.0.2560.1440@0.0.2560.1440" timestamp="1581347090729" />
-    <state x="177" y="0" width="2205" height="1440" key="DiffContextDialog" timestamp="1581514861089">
+    <state width="553" height="552" key="Diff.GoToChangePopup" timestamp="1581524226261">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state width="553" height="552" key="Diff.GoToChangePopup/0.0.2560.1440@0.0.2560.1440" timestamp="1581524226261" />
+    <state x="702" y="373" width="1522" height="808" key="DiffContextDialog" timestamp="1581525290799">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1581006720534" />
-    <state x="177" y="0" width="2205" height="1440" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581514861089" />
+    <state x="702" y="373" width="1522" height="808" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581524424938" />
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.807@0.23.1440.807" timestamp="1580980125644" />
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1580922165459" />
-    <state x="177" y="0" width="2205" height="1440" key="DiffContextDialog/0.23.2560.1347@0.23.2560.1347" timestamp="1581421954698" />
-    <state width="2504" height="451" key="GridCell.Tab.0.bottom" timestamp="1581514576777">
+    <state x="702" y="373" width="1522" height="808" key="DiffContextDialog/0.23.2560.1347@0.23.2560.1347" timestamp="1581525290799" />
+    <state width="2504" height="391" key="GridCell.Tab.0.bottom" timestamp="1581525245557">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581158368331" />
-    <state width="2504" height="451" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581514576777" />
+    <state width="2504" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581525245557" />
     <state width="1394" height="368" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="2504" height="451" key="GridCell.Tab.0.center" timestamp="1581514576776">
+    <state width="2504" height="391" key="GridCell.Tab.0.center" timestamp="1581525245556">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581158368330" />
-    <state width="2504" height="451" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581514576776" />
+    <state width="2504" height="391" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581525245556" />
     <state width="1394" height="368" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1580922348214" />
-    <state width="2504" height="451" key="GridCell.Tab.0.left" timestamp="1581514576776">
+    <state width="2504" height="391" key="GridCell.Tab.0.left" timestamp="1581525245555">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581158368328" />
-    <state width="2504" height="451" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581514576776" />
+    <state width="2504" height="391" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581525245555" />
     <state width="1394" height="368" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1580922348213" />
-    <state width="2504" height="451" key="GridCell.Tab.0.right" timestamp="1581514576777">
+    <state width="2504" height="391" key="GridCell.Tab.0.right" timestamp="1581525245557">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581158368331" />
-    <state width="2504" height="451" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581514576777" />
+    <state width="2504" height="391" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581525245557" />
     <state width="1394" height="368" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="2504" height="418" key="GridCell.Tab.1.bottom" timestamp="1581513206866">
+    <state width="2504" height="594" key="GridCell.Tab.1.bottom" timestamp="1581523514573">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581158262288" />
-    <state width="2504" height="418" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581513206866" />
-    <state width="2504" height="418" key="GridCell.Tab.1.center" timestamp="1581513206865">
+    <state width="2504" height="594" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581523514573" />
+    <state width="2504" height="594" key="GridCell.Tab.1.center" timestamp="1581523514572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1581158262286" />
-    <state width="2504" height="418" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581513206865" />
-    <state width="2504" height="418" key="GridCell.Tab.1.left" timestamp="1581513206865">
+    <state width="2504" height="594" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581523514572" />
+    <state width="2504" height="594" key="GridCell.Tab.1.left" timestamp="1581523514571">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1581158262286" />
-    <state width="2504" height="418" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581513206865" />
-    <state width="2504" height="418" key="GridCell.Tab.1.right" timestamp="1581513206866">
+    <state width="2504" height="594" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581523514571" />
+    <state width="2504" height="594" key="GridCell.Tab.1.right" timestamp="1581523514572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1581158262288" />
-    <state width="2504" height="418" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581513206866" />
+    <state width="2504" height="594" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581523514572" />
     <state x="768" y="565" key="Performance.Activity.Monitor" timestamp="1581345967560">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -252,11 +276,11 @@
     </state>
     <state x="244" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580886889450" />
     <state x="434" y="142" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1581307213409" />
-    <state x="775" y="439" key="com.intellij.ide.util.TipDialog" timestamp="1581508634420">
+    <state x="775" y="439" key="com.intellij.ide.util.TipDialog" timestamp="1581520180111">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="436" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1581058177973" />
-    <state x="775" y="439" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581508634420" />
+    <state x="775" y="439" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581520180111" />
     <state x="363" y="74" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581321002273">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -285,16 +309,5 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1580703736953" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/test.cpp</url>
-          <line>62</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

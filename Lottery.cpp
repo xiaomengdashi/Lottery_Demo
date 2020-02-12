@@ -9,8 +9,6 @@
 
 using namespace std;
 
-static int id = 0;
-
 Lottery::Lottery()= default;
 
 Lottery::~Lottery()= default;
@@ -31,12 +29,13 @@ int Lottery::GetRandomNum()
         sum += staff_[i].weight;
         vec_sum.push_back(sum);
     }
+
     static std::default_random_engine engine(time(NULL));
-    static std::uniform_int_distribution<int> u(0, sum-1);
+    std::uniform_int_distribution<int> u(0, sum-1);
     int target = u(engine);
 
     int k = 0;
-    for (; k < vec_sum.size(); ++k)
+    for (; k < vec_sum.size(); k++)
     {
         if (target < vec_sum[k])
         {
@@ -50,8 +49,9 @@ void Lottery::PrintStaff()
 {
     for (auto & it : staff_)
     {
-        cout << it.id << " "<< it.job_number << " "<< it.name << " "
-             << it.department << " "<< it.team << " "<< it.is_win << endl;
+        cout << " "<< it.job_number << " "<< it.name << " "
+             << it.department << " "<< it.team << " "<< it.is_win
+             << endl;
     }
 }
 
@@ -114,8 +114,7 @@ string Lottery::TeamLottery(const string& team)
 
 void Lottery::DobuleStaff(const string& name)
 {
-    int num  = staff_num_;
-    for (int i = 0; i<num; i++)
+    for (int i = 0; i<staff_num_; i++)
     {
         if (staff_[i].name == name)
         {
@@ -127,8 +126,7 @@ void Lottery::DobuleStaff(const string& name)
 
 void Lottery::DobuleTeam(const string& team)
 {
-    int num  = staff_num_;
-    for (int i = 0; i<num; i++)
+    for (int i = 0; i<staff_num_; i++)
     {
         if (staff_[i].team == team)
         {
@@ -140,7 +138,6 @@ void Lottery::DobuleTeam(const string& team)
 void Lottery::AddStaff(int job_number, string name, string department, string team)
 {
     sta staff;
-    staff.id = ++id;
     staff.job_number = job_number;
     staff.name = std::move(name);
     staff.department = std::move(department);
@@ -152,13 +149,14 @@ void Lottery::AddStaff(int job_number, string name, string department, string te
 
 void Lottery::DeleteStaff(const string& name)
 {
-    for(auto it = staff_.begin(); it != staff_.end(); it++)
+    for (auto it = staff_.begin(); it != staff_.end(); it++)
     {
-        if(it->name == name)
+        if (it->name == name)
         {
             it = staff_.erase(it);
             staff_num_ -= 1;
-            if (it == staff_.end()) break;
+            if (it == staff_.end())
+                break;
         }
     }
 }
