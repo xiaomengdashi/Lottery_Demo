@@ -4,10 +4,14 @@
 
 #include <iostream>
 #include "Lottery.h"
+#include <ctime>
+#include <random>
 
 using namespace std;
 
 static int id = 0;
+static int m = 0, n = 0, j = 0,p=0;
+
 
 Lottery::Lottery()= default;
 
@@ -24,18 +28,21 @@ int Lottery::GetRandomNum()
         w[i] = staff_[i].weight;
     }
 
-    for (int i : w)
+    for (int i=0; i<staff_num_; i++)
     {
         sum += staff_[i].weight;
         vec_sum.push_back(sum);
     }
+    static std::default_random_engine e(time(NULL));
+    static std::uniform_int_distribution<int> u(0, sum-1);
+    int target = u(e);
+    int s = target;
 
-    srand((unsigned)time(nullptr));
-    int target = rand()%sum;
+
     int k=0;
     for(;k<vec_sum.size();++k)
     {
-        if(target<vec_sum[k])
+        if(s<vec_sum[k])
         {
             break;
         }
@@ -58,6 +65,19 @@ string Lottery::AllStaffLottery()
     int random_id = GetRandomNum();
     staff_[random_id].is_win = true;
     staff_name =  staff_[random_id].name;
+
+    if (staff_name == "小明")
+    {
+        m++;
+    } else if (staff_name=="小红")
+    {
+        n++;
+    } else if (staff_name == "小李")
+    {
+        j++;
+    }
+    p++;
+    std::cout << double (m)/double(p) <<"  "<< double (n)/double(p) << "  " << double (j)/double(p) << "   "  << p << std::endl;
 
     return staff_name;
 }

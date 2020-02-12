@@ -14,8 +14,9 @@
     <list default="true" id="f3944ccd-537d-4ab0-9ef6-12d3cf36ce8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Staff.h" beforeDir="false" afterPath="$PROJECT_DIR$/Staff.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unittest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,9 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="Lottery_Demo" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
@@ -62,6 +66,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,6 +87,11 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lottery_Demo (1)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lottery_Demo" TARGET_NAME="Lottery_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lottery_Demo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lottery_Demo" RUN_TARGET_NAME="Lottery_Demo" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -89,11 +99,13 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.Lottery_Demo" />
+      <item itemvalue="CMake Application.Lottery_Demo (1)" />
       <item itemvalue="Google Test.AllStaffTest" />
       <item itemvalue="Google Test.NotRepeatTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="CMake Application.Lottery_Demo (1)" />
         <item itemvalue="Google Test.NotRepeatTest" />
         <item itemvalue="Google Test.AllStaffTest" />
       </list>
@@ -122,7 +134,11 @@
       <workItem from="1581350429090" duration="3589000" />
       <workItem from="1581354061101" duration="4876000" />
       <workItem from="1581406366156" duration="54000" />
-      <workItem from="1581406425191" duration="9348000" />
+      <workItem from="1581406425191" duration="12694000" />
+      <workItem from="1581476941702" duration="463000" />
+      <workItem from="1581488891646" duration="463000" />
+      <workItem from="1581489697517" duration="8419000" />
+      <workItem from="1581507996816" duration="1682000" />
     </task>
     <servers />
   </component>
@@ -188,64 +204,68 @@
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.807@0.23.1440.807" timestamp="1580980125644" />
     <state x="100" y="0" width="1240" height="900" key="DiffContextDialog/0.23.1440.811@0.23.1440.811" timestamp="1580922165459" />
     <state x="177" y="0" width="2205" height="1440" key="DiffContextDialog/0.23.2560.1347@0.23.2560.1347" timestamp="1581421954698" />
-    <state width="2504" height="564" key="GridCell.Tab.0.bottom" timestamp="1581421012187">
+    <state width="2504" height="587" key="GridCell.Tab.0.bottom" timestamp="1581510161466">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581158368331" />
-    <state width="2504" height="564" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581421012187" />
+    <state width="2504" height="587" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581510161466" />
     <state width="1394" height="368" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="2504" height="564" key="GridCell.Tab.0.center" timestamp="1581421012186">
+    <state width="2504" height="587" key="GridCell.Tab.0.center" timestamp="1581510161465">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581158368330" />
-    <state width="2504" height="564" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581421012186" />
+    <state width="2504" height="587" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581510161465" />
     <state width="1394" height="368" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1580922348214" />
-    <state width="2504" height="564" key="GridCell.Tab.0.left" timestamp="1581421012185">
+    <state width="2504" height="587" key="GridCell.Tab.0.left" timestamp="1581510161464">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581158368328" />
-    <state width="2504" height="564" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581421012185" />
+    <state width="2504" height="587" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581510161464" />
     <state width="1394" height="368" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1580922348213" />
-    <state width="2504" height="564" key="GridCell.Tab.0.right" timestamp="1581421012186">
+    <state width="2504" height="587" key="GridCell.Tab.0.right" timestamp="1581510161466">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="510" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581158368331" />
-    <state width="2504" height="564" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581421012186" />
+    <state width="2504" height="587" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581510161466" />
     <state width="1394" height="368" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1580922348215" />
-    <state width="2504" height="478" key="GridCell.Tab.1.bottom" timestamp="1581411982896">
+    <state width="2504" height="587" key="GridCell.Tab.1.bottom" timestamp="1581506790697">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581158262288" />
-    <state width="2504" height="478" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581411982896" />
-    <state width="2504" height="478" key="GridCell.Tab.1.center" timestamp="1581411982895">
+    <state width="2504" height="587" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1581506790697" />
+    <state width="2504" height="587" key="GridCell.Tab.1.center" timestamp="1581506790696">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1581158262286" />
-    <state width="2504" height="478" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581411982895" />
-    <state width="2504" height="478" key="GridCell.Tab.1.left" timestamp="1581411982895">
+    <state width="2504" height="587" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1581506790696" />
+    <state width="2504" height="587" key="GridCell.Tab.1.left" timestamp="1581506790696">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1581158262286" />
-    <state width="2504" height="478" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581411982895" />
-    <state width="2504" height="478" key="GridCell.Tab.1.right" timestamp="1581411982896">
+    <state width="2504" height="587" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1581506790696" />
+    <state width="2504" height="587" key="GridCell.Tab.1.right" timestamp="1581506790697">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1394" height="398" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1581158262288" />
-    <state width="2504" height="478" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581411982896" />
+    <state width="2504" height="587" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1581506790697" />
     <state x="768" y="565" key="Performance.Activity.Monitor" timestamp="1581345967560">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="768" y="565" key="Performance.Activity.Monitor/0.0.2560.1440@0.0.2560.1440" timestamp="1581345967560" />
+    <state x="979" y="371" key="RollbackChangesDialog" timestamp="1581503636136">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="979" y="371" key="RollbackChangesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581503636136" />
     <state x="434" y="142" key="SettingsEditor" timestamp="1581307213409">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="244" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580886889450" />
     <state x="434" y="142" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1581307213409" />
-    <state x="775" y="439" key="com.intellij.ide.util.TipDialog" timestamp="1581345920639">
+    <state x="775" y="439" key="com.intellij.ide.util.TipDialog" timestamp="1581508634420">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="436" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1581058177973" />
-    <state x="775" y="439" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581345920639" />
+    <state x="775" y="439" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1581508634420" />
     <state x="363" y="74" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581321002273">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -274,5 +294,16 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1580703736953" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test.cpp</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
