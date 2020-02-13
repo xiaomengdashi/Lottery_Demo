@@ -10,22 +10,23 @@
 
 using namespace std;
 
-enum class Awards
+enum Awards
 {
-    first_prize = 1,
+    no_prize = 0,
+    first_prize,
     second_prize,
     third_prize,
     common_prize,
+    super_prize
 };
 
-struct sta
+struct Staff
 {
     int job_number = 0;
     string name = "";
     string department = "";
     string team = "";
-    bool is_win = false;  // 是否曾经中奖
     int weight = 1;
-    vector<Awards> award;
+    Awards awards = no_prize;
 };
 #endif //staff_H

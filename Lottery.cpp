@@ -6,6 +6,7 @@
 #include "Lottery.h"
 #include <ctime>
 #include <random>
+#include <utility>
 
 using namespace std;
 
@@ -50,94 +51,14 @@ void Lottery::PrintStaff()
     for (auto & it : staff_)
     {
         cout << " "<< it.job_number << " "<< it.name << " "
-             << it.department << " "<< it.team << " "<< it.is_win
+             << it.department << " "<< it.team << " "<< it.awards
              << endl;
-    }
-}
-
-string Lottery::AllStaffLottery()
-{
-    int random_id = GetRandomNum();
-    staff_[random_id].is_win = true;
-    return  staff_[random_id].name;
-}
-
-string Lottery::NotRepeatLottery()
-{
-    int random_id = GetRandomNum();
-    if (!staff_[random_id].is_win)
-    {
-        staff_[random_id].is_win = true;
-        return staff_[random_id].name;
-    }
-    else
-    {
-        return this->NotRepeatLottery();
-    }
-}
-
-void Lottery::GobackLottery()
-{
-    for (auto &it : staff_)
-    {
-        it.is_win = false;
-    }
-}
-
-string Lottery::DepartmentLottery(const string& department)
-{
-    int random_id = GetRandomNum();
-    if (staff_[random_id].department == department && !staff_[random_id].is_win)
-    {
-        staff_[random_id].is_win = true;
-        return staff_[random_id].name;
-    }
-    else
-    {
-        return this->DepartmentLottery(department);
-    }
-}
-
-string Lottery::TeamLottery(const string& team)
-{
-    int random_id = GetRandomNum();
-    if (staff_[random_id].team == team && !staff_[random_id].is_win)
-    {
-        staff_[random_id].is_win = true;
-        return staff_[random_id].name;
-    }
-    else
-    {
-        return this->TeamLottery(team);
-    }
-}
-
-void Lottery::DobuleStaff(const string& name)
-{
-    for (int i = 0; i<staff_num_; i++)
-    {
-        if (staff_[i].name == name)
-        {
-            staff_[i].weight = 2;
-        }
-    }
-}
-
-
-void Lottery::DobuleTeam(const string& team)
-{
-    for (int i = 0; i<staff_num_; i++)
-    {
-        if (staff_[i].team == team)
-        {
-            staff_[i].weight = 2;
-        }
     }
 }
 
 void Lottery::AddStaff(int job_number, string name, string department, string team)
 {
-    sta staff;
+    Staff staff;
     staff.job_number = job_number;
     staff.name = std::move(name);
     staff.department = std::move(department);
@@ -159,5 +80,140 @@ void Lottery::DeleteStaff(const string& name)
                 break;
         }
     }
+}
+
+void Lottery::DoubleStaff(const string& name)
+{
+    for (int i = 0; i<staff_num_; i++)
+    {
+        if (staff_[i].name == name)
+        {
+            staff_[i].weight = 2;
+        }
+    }
+}
+
+
+void Lottery::DoubleTeam(const string& team)
+{
+    for (int i = 0; i<staff_num_; i++)
+    {
+        if (staff_[i].team == team)
+        {
+            staff_[i].weight = 2;
+        }
+    }
+}
+
+void Lottery::GobackLottery(string goback_type)
+{
+    if (goback_type == "AllGoback")      //  全部回归奖池
+    {
+        for (auto &it : staff_)
+        {
+            it.awards = no_prize;
+            it.weight = 1;
+        }
+    } else if (goback_type == "SuperPrizeGoback")    // 抽特等奖时，三等奖和阳光普照奖回归
+    {
+        for (auto &it : staff_)
+        {
+            if (it.awards == 3 || it.awards == 4)
+            {
+                it.awards = no_prize;
+                it.weight = 1;
+            }
+        }
+    }      // 如果都不是，则按照默认的抽奖
+}
+
+string Lottery::JustLottery(string prize)
+{
+    int random_id = GetRandomNum();
+    if (!staff_[random_id].awards)
+    {
+        if (prize == "first_prize")
+            staff_[random_id].awards = first_prize;
+        else if (prize == "second_prize")
+            staff_[random_id].awards = second_prize;
+        else if (prize == "third_prize")
+            staff_[random_id].awards = third_prize;
+        else if (prize == "super_prize")
+            staff_[random_id].awards = super_prize;
+        else if (prize == "common_prize")
+            staff_[random_id].awards = common_prize;
+
+        staff_[random_id].weight = 0;
+        return staff_[random_id].name;
+    }
+    else
+    {
+        return this->JustLottery(std::move(prize));
+    }
+}
+
+string Lottery::DepartmentLottery(const string& department, string prize)
+{
+    int random_id = GetRandomNum();
+    if (staff_[random_id].department == department && !staff_[random_id].awards)
+    {
+        if (prize == "first_prize")
+            staff_[random_id].awards = first_prize;
+        else if (prize == "second_prize")
+            staff_[random_id].awards = second_prize;
+        else if (prize == "third_prize")
+            staff_[random_id].awards = third_prize;
+        else if (prize == "super_prize")
+            staff_[random_id].awards = super_prize;
+        else if (prize == "common_prize")
+            staff_[random_id].awards = common_prize;
+
+        staff_[random_id].weight = 0;
+        return staff_[random_id].name;
+    }
+    else
+    {
+        return this->DepartmentLottery(department, std::move(prize));
+    }
+}
+
+string Lottery::TeamLottery(const string& team, string prize)
+{
+    int random_id = GetRandomNum();
+    if (staff_[random_id].team == team && !staff_[random_id].awards)
+    {
+        if (prize == "first_prize")
+            staff_[random_id].awards = first_prize;
+        else if (prize == "second_prize")
+            staff_[random_id].awards = second_prize;
+        else if (prize == "third_prize")
+            staff_[random_id].awards = third_prize;
+        else if (prize == "super_prize")
+            staff_[random_id].awards = super_prize;
+        else if (prize == "common_prize")
+            staff_[random_id].awards = common_prize;
+
+        staff_[random_id].weight = 0;
+        return staff_[random_id].name;
+    }
+    else
+    {
+        return this->TeamLottery(team, std::move(prize));
+    }
+}
+
+string Lottery::LottryStart(const string& prize, const string& department, const string& team)
+{
+    if (!department.empty())
+    {
+        return this->DepartmentLottery(department, prize);
+    }
+
+    if (!team.empty())
+    {
+        return this->TeamLottery(team, prize);
+    }
+
+    return this->JustLottery(prize);
 }
 

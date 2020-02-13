@@ -16,22 +16,23 @@ class Lottery
 public:
     Lottery();
     ~Lottery();
-    void AddStaff(int job_number, string name, string department, string team);  // 增加员工
-    void DeleteStaff(const string& name);    // 剔除指定员工
     void PrintStaff();    // 打印全体员工信息
     int GetRandomNum();   // 根据权重获取随机数
-    void GobackLottery();   // 中奖人员回归奖池
+    void AddStaff(int job_number, string name, string department, string team);  // 增加员工
+    void DeleteStaff(const string& name);    // 剔除指定员工
+    void DoubleStaff(const string& name="");    // 优秀个人翻倍抽奖
+    void DoubleTeam(const string& team="");     // 优秀团队翻倍抽奖
+    void GobackLottery(string goback_type="NoGoback");   // 中奖人员回归奖池
 
-    string AllStaffLottery();  // 全体员工抽奖
-    string NotRepeatLottery();  // 还未中奖员工抽奖
-    string DepartmentLottery(const string& department);  // 指定部门抽奖
-    string TeamLottery(const string& team);              // 指定团队抽奖
-
-    void DobuleStaff(const string& name="");    // 优秀个人翻倍抽奖
-    void DobuleTeam(const string& team="");     // 优秀团队翻倍抽奖
+    string LottryStart(const string& prize, const string& department="", const string& team="");   // 开始抽奖
 
 private:
-    vector<sta> staff_;
+    string DepartmentLottery(const string& department, string prize);  // 指定部门抽奖
+    string TeamLottery(const string& team, string prize);              // 指定团队抽奖
+    string JustLottery(string prize);    // 不指定团队，也不指定部门
+
+private:
+    vector<Staff> staff_;
     int staff_num_ = 0;
 };
 #endif //LOTTERY_LOTTERY_H
