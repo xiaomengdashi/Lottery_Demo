@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
+RM = "/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/kolane/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,152 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lottery_Demo
+# Target rules for targets named main
 
 # Build rule for target.
-Lottery_Demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lottery_Demo
-.PHONY : Lottery_Demo
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-Lottery_Demo/fast:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/build
-.PHONY : Lottery_Demo/fast
+main/fast:
+	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-Lottery.o: Lottery.cpp.o
+#=============================================================================
+# Target rules for targets named unittest
 
-.PHONY : Lottery.o
+# Build rule for target.
+unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unittest
+.PHONY : unittest
 
-# target to build an object file
-Lottery.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.o
-.PHONY : Lottery.cpp.o
-
-Lottery.i: Lottery.cpp.i
-
-.PHONY : Lottery.i
-
-# target to preprocess a source file
-Lottery.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.i
-.PHONY : Lottery.cpp.i
-
-Lottery.s: Lottery.cpp.s
-
-.PHONY : Lottery.s
-
-# target to generate assembly for a file
-Lottery.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Lottery.cpp.s
-.PHONY : Lottery.cpp.s
-
-Staff.o: Staff.cpp.o
-
-.PHONY : Staff.o
-
-# target to build an object file
-Staff.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.o
-.PHONY : Staff.cpp.o
-
-Staff.i: Staff.cpp.i
-
-.PHONY : Staff.i
-
-# target to preprocess a source file
-Staff.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.i
-.PHONY : Staff.cpp.i
-
-Staff.s: Staff.cpp.s
-
-.PHONY : Staff.s
-
-# target to generate assembly for a file
-Staff.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/Staff.cpp.s
-.PHONY : Staff.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-test.o: test.cpp.o
-
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/test.cpp.s
-.PHONY : test.cpp.s
-
-unittest.o: unittest.cpp.o
-
-.PHONY : unittest.o
-
-# target to build an object file
-unittest.cpp.o:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.o
-.PHONY : unittest.cpp.o
-
-unittest.i: unittest.cpp.i
-
-.PHONY : unittest.i
-
-# target to preprocess a source file
-unittest.cpp.i:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.i
-.PHONY : unittest.cpp.i
-
-unittest.s: unittest.cpp.s
-
-.PHONY : unittest.s
-
-# target to generate assembly for a file
-unittest.cpp.s:
-	$(MAKE) -f CMakeFiles/Lottery_Demo.dir/build.make CMakeFiles/Lottery_Demo.dir/unittest.cpp.s
-.PHONY : unittest.cpp.s
+# fast build rule for target.
+unittest/fast:
+	$(MAKE) -f unittest/CMakeFiles/unittest.dir/build.make unittest/CMakeFiles/unittest.dir/build
+.PHONY : unittest/fast
 
 # Help Target
 help:
@@ -266,22 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Lottery_Demo"
-	@echo "... Lottery.o"
-	@echo "... Lottery.i"
-	@echo "... Lottery.s"
-	@echo "... Staff.o"
-	@echo "... Staff.i"
-	@echo "... Staff.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
-	@echo "... unittest.o"
-	@echo "... unittest.i"
-	@echo "... unittest.s"
+	@echo "... main"
+	@echo "... unittest"
 .PHONY : help
 
 

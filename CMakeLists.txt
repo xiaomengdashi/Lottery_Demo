@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 #头文件目录
 include_directories(
-        ./
+        ./include/
         /usr/local/include/
 )
 
@@ -14,14 +14,5 @@ link_directories(
         /usr/local/lib/
 )
 
-add_executable(Lottery_Demo
-    Lottery.cpp
-    Lottery.h
-    main.cpp
-    Staff.cpp
-    Staff.h
-    test.cpp
-    unittest.cpp)
-
-target_link_libraries(Lottery_Demo gtest gtest_main pthread)
-
+add_subdirectory(src)
+add_subdirectory(unittest)

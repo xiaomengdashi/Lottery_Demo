@@ -25,9 +25,9 @@ int main()
 //    {
 //        cout << endl;
 //        cout << i << endl;
-        cout << lottery.LottryStart("first_prize", "一部", "") << endl;
-        cout << lottery.LottryStart("common_prize", "", "mcp") << endl;
-        cout << lottery.LottryStart("second_prize", "", "mcp") << endl;
+        cout << lottery.LotteryStart("first_prize", "一部", "") << endl;
+        cout << lottery.LotteryStart("common_prize", "", "mcp") << endl;
+        cout << lottery.LotteryStart("second_prize", "", "mcp") << endl;
         lottery.PrintStaff();
         lottery.GobackLottery("AllGoback");
 //    }

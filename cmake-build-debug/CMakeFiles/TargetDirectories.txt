@@ -1,3 +1,8 @@
 /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/CMakeFiles/Lottery_Demo.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/src/CMakeFiles/main.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/unittest/CMakeFiles/rebuild_cache.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/unittest/CMakeFiles/edit_cache.dir
+/Users/kolane/Desktop/CLionProjects/Lottery_Demo/cmake-build-debug/unittest/CMakeFiles/unittest.dir

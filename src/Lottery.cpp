@@ -3,10 +3,11 @@
 //
 
 #include <iostream>
-#include "Lottery.h"
 #include <ctime>
 #include <random>
 #include <utility>
+
+#include "Lottery.h"
 
 using namespace std;
 
@@ -93,7 +94,6 @@ void Lottery::DoubleStaff(const string& name)
     }
 }
 
-
 void Lottery::DoubleTeam(const string& team)
 {
     for (int i = 0; i<staff_num_; i++)
@@ -112,6 +112,7 @@ void Lottery::GobackLottery(string goback_type)
         for (auto &it : staff_)
         {
             it.awards = no_prize;
+            //TODO 有bug，当人员翻倍之后，并中奖了，这时回归奖池，并没有回到翻倍的状态，可以通过再添加一个字段Is_Win来判断是否中奖
             it.weight = 1;
         }
     } else if (goback_type == "SuperPrizeGoback")    // 抽特等奖时，三等奖和阳光普照奖回归
@@ -202,7 +203,7 @@ string Lottery::TeamLottery(const string& team, string prize)
     }
 }
 
-string Lottery::LottryStart(const string& prize, const string& department, const string& team)
+string Lottery::LotteryStart(const string& prize, const string& department, const string& team)
 {
     if (!department.empty())
     {

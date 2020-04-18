@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+
 #include "Staff.h"
 
 using namespace std;
@@ -24,7 +25,7 @@ public:
     void DoubleTeam(const string& team="");     // 优秀团队翻倍抽奖
     void GobackLottery(string goback_type="NoGoback");   // 中奖人员回归奖池
 
-    string LottryStart(const string& prize, const string& department="", const string& team="");   // 开始抽奖
+    string LotteryStart(const string& prize, const string& department="", const string& team="");   // 开始抽奖
 
 private:
     string DepartmentLottery(const string& department, string prize);  // 指定部门抽奖
